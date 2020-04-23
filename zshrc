@@ -100,9 +100,13 @@ function cd_up() {
 alias 'cd..'='cd_up'
 alias vim='nvim'
 alias vi='nvim'
-
-
-
+alias n="nano"
+alias m="mkdir"
+alias p="python"
+alias t="tmux"
+openout_any=a
+export EDITOR=nvim
+export VISUAL="$EDITOR"
 
 prompt_context() {
   local user=`whoami`
@@ -116,6 +120,10 @@ prompt_context() {
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # User configuration
+
+if [[ -n $VIRTUAL_ENV && -e "${VIRTUAL_ENV}/bin/activate" ]]; then
+  source "${VIRTUAL_ENV}/bin/activate"
+fi
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

@@ -1,0 +1,33 @@
+{
+    "workbench.colorTheme": "Night Owl",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.detectIndentation": true,
+    "editor.renderIndentGuides": false,
+    "window.zoomLevel": 0,
+    "editor.fontSize": 15,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "editor.cursorBlinking": "smooth",
+    "files.trimFinalNewlines": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.mouseWheelZoom": true,
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Path": "flake8",
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=90"
+    ],
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "${workspaceRoot}/.venv/bin/black",
+    "python.formatting.blackArgs": [
+        "--line-length=90"
+    ],
+    "terminal.external.linuxExec": "Konsole",
+    "terminal.integrated.fontFamily": "Fira code",
+    "terminal.integrated.fontSize": 14,
+    "liveServer.settings.donotShowInfoMsg": true,
+}
